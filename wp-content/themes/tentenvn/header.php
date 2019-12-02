@@ -48,20 +48,6 @@
 				</div>
 			<?php endif; ?>
 			<span class="icon_mobile_click"><i class="fa fa-bars" aria-hidden="true"></i></span>
-			<?php if(get_option('address_header') || get_option('phone')) { ?>
-				<div class="address_header">
-					<div class="container">
-						<div class="textwidget">
-							<?php if(get_option('phone')){ ?>
-								<p><i class="fa fa-phone" aria-hidden="true"></i><strong>Hotline : </strong><a href="tel:<?php echo get_option('phone'); ?>"> <?php echo get_option('phone'); ?></a></p>
-							<?php }?>
-							<?php if(get_option('address_header')){ ?>
-								<p><i class="fa fa-map-marker" aria-hidden="true"></i><strong>Địa chỉ : </strong><?php echo get_option('address_header'); ?></p>
-							<?php }?>
-						</div>		
-					</div>	
-				</div>
-			<?php }?>
 			<div class="container">
 				<div class="logo_site">
 					<?php 
@@ -73,18 +59,7 @@
 					<?php } ?>
 				</div>
 				
-				<div class="search_address">
-					<div class="search_header">
-						<?php //get_search_form(); ?>
-						<form role="search" method="get" id="searchform" action="<?php echo home_url('/');  ?>">
-							<div class="search">
-								<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="Tìm kiếm">
-								<input type="hidden" value="product" name="post_type">
-								<button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
-							</div>
-						</form>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 
@@ -107,12 +82,12 @@
 								|  <a href="<?php echo wp_logout_url(); ?>" > Đăng xuất</a>
 							</div>
 						<?php endif; ?>
-						<div class="tg_user <?php if (is_user_logged_in()): echo 'user_logged_in'; ?> <?php endif; ?> ">
+						<!-- <div class="tg_user <?php if (is_user_logged_in()): echo 'user_logged_in'; ?> <?php endif; ?> ">
 							<a href="<?php echo get_site_url().'/tai-khoan';?>"><i class="fa fa-user" aria-hidden="true"></i></a>
 							<div class="tg-sub-menu">
 								<p><a href="<?php echo get_site_url().'/tai-khoan';?>">Đăng nhập</a> | <a href="<?php echo get_site_url().'/tai-khoan';?>">Đăng kí</a></p>
 							</div>
-						</div>
+						</div> -->
 						<div class="g_cart">
 
 							<?php global $woocommerce; ?>
@@ -129,8 +104,11 @@
 				</div>
 			</div>
 			<?php if(is_front_page() && !is_home()){ ?>
-			<div class="tg_slide">
+			 <div class="tg_slide">
 				<?php echo do_shortcode('[metaslider id="61"]'); ?>
+			</div> 
+			<div class="banner">
+				
 			</div>
 			<?php } ?>
 		</header>

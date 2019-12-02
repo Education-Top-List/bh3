@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: page-template-gioithieu
+Template Name: page-template-tthuuich
 */
 get_header(); 
 ?>	
@@ -17,7 +17,6 @@ get_header();
 				<div class="col-sm-9">
 					<div class="g_content_left">
 						<?php 
-		$my_postid = 540;//This is page id or post id
 		$content_post = get_post($my_postid);
 		$content = $content_post->post_content;
 		$content = apply_filters('the_content', $content);

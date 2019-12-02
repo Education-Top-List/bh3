@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap&subset=latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
 html{
   margin:0px !important;
@@ -22,11 +22,7 @@ a:hover{
 :hover,:focus{
   outline: none !important;
 }
-@font-face{
 
-  font-family: rbt;
-  src:url(../fonts/Roboto-Regular.ttf);
-}
 body{
  font-style: normal;
  font-weight: 400;
@@ -34,11 +30,11 @@ body{
  letter-spacing: 0em;
  color: #333333;
  position: relative;
- font-family: 'Quicksand', sans-serif;
+ font-family: 'Roboto', sans-serif;
  overflow-x: hidden;
 }
 .container{
-  max-width: 1230px;
+  max-width: 950px;
   margin:0px auto;
   width: 100%;
 }
@@ -361,7 +357,7 @@ span.woocommerce-Price-amount{
 .nav_primary ul li a{
   display: inline-block;
   padding: 17px 15px 15px 15px;
-  color: #fff;
+  color: rgb(31, 31, 31);
   font-weight: 700;
   transition: all 0.3s;
   font-size: 14px;
@@ -468,7 +464,7 @@ article.post{
 }
 
 .nav_primary ul li a:hover{
-  color: #fff;
+  color: rgb(212, 153, 39);
   background: rgba(255, 255, 255, 0.3);
   /* border-radius: 20px; */
 }
@@ -503,10 +499,9 @@ article.post{
 }
 /* CSS HEADER */
 .logo_site{
-  max-width: 220px;
-  float:left;
+  max-width: 230px;
   transition: all 0.3s;
-  margin: 10px 0px;
+  margin: 0 auto;
 }
 .logo_site img{
   max-width: 100%;
@@ -572,7 +567,7 @@ article.post{
  color: #f2237f;
 }
 .middle_header{
-  background: #ff305c;
+  background: #fff;
   padding: 0px 0px;
   border-top: none;
   border-bottom: none;
@@ -654,7 +649,7 @@ article.post{
 }
 .tg_user i.fa{
   font-size: 25px;
-  color: #fff;
+  color: rgb(31, 31, 31);
 }
 .user_logged_in{
   display: none;
@@ -1171,7 +1166,7 @@ li.widget{
  display: inline-block;
 }
 img.size-full{
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .fb_iframe_widget, .fb_iframe_widget>span,  .fb_iframe_widget iframe{
@@ -1475,7 +1470,7 @@ body.search-results .title_header strong{
 
 .g_cart i.fa-shopping-cart{
  font-size: 25px;
- color: #fff;
+ color: rgb(31, 31, 31);
 }
 
 .g_cart .amount_pdc{
@@ -2730,9 +2725,15 @@ a.added_to_cart{
 /* CSS FOOTER */
 .footer{
   border-top: none;
-  padding: 25px 0px 25px 0px;
+  padding: 75px 0px 50px 0px;
   margin:70px 0px 0px 0px;
-  background: #333;
+  /* background: #333; */
+  font-size: 14px;
+  /* padding-top: 50px; */
+  /* font-weight: bold; */
+  background-color: rgb(252, 249, 248);
+  color: rgb(31, 31, 31);
+   border-top: 1px solid rgb(241, 241, 241); 
 }
 .footer  h3.widget-title{
  font-size: 18px;
@@ -2995,6 +2996,23 @@ a.added_to_cart{
 }
 
 /* css rau*/
+.home .flexslider .caption-wrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: none;
+    color: white;
+    opacity: 1;
+    margin: 0;
+    display: block;
+    line-height: 1.4em;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 375px;
+    width: 100%;
+    text-align: center;
+}
 .posts_banner_idx .list_post_item .thumbnail{
   max-width: 150px;
   height: 105px;
@@ -3651,4 +3669,10 @@ a.added_to_cart{
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+}
+
+#how_it_work .q_how_title .widget-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
 }
