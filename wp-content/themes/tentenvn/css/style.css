@@ -1419,10 +1419,12 @@ body.search-results .title_header strong{
 .cart_login{
   float:right;
   margin: 14px 0px 14px 0px;
+  display: inline-flex;
 }
 .g_cart{
  position: relative;
  float: right;
+ display: inline-flex;
 }
 .g_cart .header-quickcart{
   visibility: hidden;

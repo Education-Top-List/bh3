@@ -88,8 +88,17 @@
 								<p><a href="<?php echo get_site_url().'/tai-khoan';?>">Đăng nhập</a> | <a href="<?php echo get_site_url().'/tai-khoan';?>">Đăng kí</a></p>
 							</div>
 						</div> -->
+
+								<?php //get_search_form(); ?>
+								<form role="search" method="get" id="searchform" action="<?php echo home_url('/');  ?>">
+									<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="Tìm kiếm">
+									<input type="hidden" value="product" name="post_type">
+									<button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+							</form>
 						<div class="g_cart">
 
+							
+								
 							<?php global $woocommerce; ?>
 							<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('Xem giỏ hàng', 'woothemes'); ?>">
 								<?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> <?php //echo $woocommerce->cart->get_cart_total(); ?> 
