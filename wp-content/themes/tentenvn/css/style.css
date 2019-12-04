@@ -34,7 +34,7 @@ body{
  overflow-x: hidden;
 }
 .container{
-  max-width: 950px;
+  max-width: 980px;
   margin:0px auto;
   width: 100%;
 }
@@ -3678,3 +3678,41 @@ a.added_to_cart{
   font-size: 34px;
   font-weight: bold;
 }
+#how_it_work .container{
+  max-width: 740px;
+}
+#how_it_work .container>.panel-layout>.panel-grid:nth-child(2n)
+ .panel-layout>.panel-grid>.panel-grid-cell:nth-child(2)>.so-panel{
+  display: table;
+  min-height: 340px;
+}
+#how_it_work .container>.panel-layout>.panel-grid:nth-child(2n)
+ .panel-layout>.panel-grid>.panel-grid-cell:nth-child(2)>.so-panel .textwidget{
+    display: table-cell;
+    vertical-align: middle;
+ }
+ #how_it_work .container>.panel-layout>.panel-grid:nth-child(2n+1) 
+ .panel-layout>.panel-grid>.panel-grid-cell:nth-child(1)>.so-panel {
+   display: table;
+  min-height: 340px;
+ }
+ #how_it_work .container>.panel-layout>.panel-grid:nth-child(2n+1)
+ .panel-layout>.panel-grid>.panel-grid-cell:nth-child(1)>.so-panel .textwidget{
+    display: table-cell;
+    vertical-align: middle;
+ }
+ .middle_header  .container{
+  position: relative;
+ }
+ .nav_primary li.collection {
+      position: initial;
+ }
+  .nav_primary li.collection ul.sub-menu{
+    width:100%;
+    left: 0px;
+  }
+  .nav_primary li.collection ul.sub-menu li {
+    width: 33.33%;
+    padding:0px 15px;
+    float:left;
+  }
